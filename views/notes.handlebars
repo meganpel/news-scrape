@@ -1,0 +1,17 @@
+<h2 class="page-title m-3">Notes for Article: {{article.headline}}</h2>
+
+<div id="notes">
+    {{#each notes}}
+        <div id="{{this.id}}" class="card m-3">
+            <div class="card-body">
+                <p class="card-text">{{this.message}}</p>
+                <span class="btn btn-danger remove-note" noteid="{{this.id}}">Remove Note</span>
+            </div>
+        </div>
+    {{/each}}
+</div>
+
+<div class="form-group m-3">
+    <input type="text" class="form-control" id="note-text" placeholder="Add New Note">
+</div>
+<span class="btn btn-success ml-3" id="add-note" articleid="{{article.id}}">Add New Note</span>

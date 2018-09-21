@@ -1,0 +1,18 @@
+<h2 class="page-title m-3">All Articles</h2>
+
+<div id="articles">
+    {{#each articles}}
+        <div class="card m-3">
+            <div class="card-body">
+                <h5 class="card-title">{{this.headline}}</h5>
+                <p class="card-text">{{this.summary}}</p>
+                <a href="/notes/{{this.id}}" class="btn btn-primary">View Notes</a>
+                {{#if this.saved}}
+                    <span class="btn btn-danger unsave-article" articleid="{{this.id}}">Remove Saved</span>
+                {{else}}
+                    <span class="btn btn-warning save-article" articleid="{{this.id}}">Save Article</span>
+                {{/if}}
+            </div>
+        </div>
+    {{/each}}
+</div>

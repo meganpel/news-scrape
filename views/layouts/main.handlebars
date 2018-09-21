@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="/js/index.js"></script>
+    <title>Travel Talk</title>
+</head>
+
+<body>
+    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 main-nav">
+        <h5 class="navigation-title mr-md-auto font-weight-normal">Travel Talk</h5>
+        <nav class="my-2 my-md-0 mr-md-3">
+            <a class="p-2 main-nav-link" href="/">Home</a>
+            <a class="p-2 main-nav-link" href="/saved">My Saved Articles</a>
+            {{#if syncEnabled}}
+                <span id="sync-articles" class="btn btn-success">Sync Articles</span>
+            {{/if}}
+        </nav>
+    </div>
+{{{body}}}
+</body>
+
+</html>
