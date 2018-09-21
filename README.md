@@ -2,7 +2,7 @@
 This web app lets users view and leave comments on the latest news. A user can scrape the latest articles, clear articles, save articles as well as add and delete notes.The app was created using Mongo and Cheerio to scrape the travel section of the New York Times.
 
 ## View app on Heroku
-link goes here
+https://news-scrape-project.herokuapp.com/
 
 ## How to run
 - You will need to install the packages with `npm install`
